@@ -1,0 +1,174 @@
+.Game_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://thumbs.dreamstime.com/b/magma-full-lava-lava-ground-background-global-warming-magma-full-lava-lava-ground-background-global-warming-191750857.jpg');
+    background-size: 100%, 100vh;
+}
+.Game_container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 94%);
+    margin-left: 200px;
+    text-align: center;
+}
+
+.Game_groundFirst {
+    position: absolute;
+    width: calc(47% + 1px);
+    height: 50%;
+    left: 3%;
+}
+
+.Game_groundSecond {
+    position: absolute;
+    width: calc(47% + 1px);
+    left: 50%;
+    height: 50%;
+    right: 3%;
+}
+
+.Game_groundThird {
+    position: absolute;
+    width: calc(47% + 1px);
+    top: 50%;
+    height: 50%;
+    left: 3%;
+}
+
+.Game_groundFourth {
+    position: absolute;
+    width: calc(47% + 1px);
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    right: 3%;
+}
+
+.Game_maze {
+    position: absolute;
+    width: 94%;
+    height: 100vh;
+    left: 3%;
+    display: grid;
+    grid-template-rows: repeat(8, 12.5%);
+    grid-template-columns: repeat(8, 12.5%);
+}
+
+.Game_square {
+    position: relative;
+}
+
+.Game_wall {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Game_knight1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 40%;
+    height: 40%;
+    z-index: 1;
+}
+
+.Game_knight2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+}
+
+@keyframes level2 {
+    from { width: 40%; height: 40%; }
+    to { width: 60%; height: 60%; }
+}
+
+.Game_knight2First{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+}
+
+.Game_knight3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+
+.Game_knight4, .Game_finalBoss {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Game_troopImage1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 40%;
+    height: 40%;
+    z-index: 1;
+}
+
+.Game_troopImage2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+}
+
+.Game_troopImage3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+
+@keyframes present {
+    from { width: 50%; }
+    to { width: 0; }
+}
+
+.Game_navBackgroundLeft {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 0;
+    animation-name: present;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.Game_navBackgroundRight {
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    animation-name: present;
+    animation-duration: 3s ;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}

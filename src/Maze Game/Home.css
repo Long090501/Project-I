@@ -1,0 +1,89 @@
+.Home_wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.wallpaperflare.com/static/224/806/363/dark-souls-dark-souls-iii-video-games-knight-wallpaper.jpg');
+    background-size: 100vw 100vh;
+}
+
+.Home_gameLogo {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 210px;
+    height: 250px;
+}
+
+.Home_gameTitle {
+    position: absolute;
+    top: 95px;
+    right: 68px;
+    width: 150px;
+    height: 90px;
+}
+
+.Home_button {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    border: 8px ridge white;
+    box-shadow: 0 9px rgb(111, 111, 111);
+    background-color: limegreen;
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+    font-family: verdana;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px #919191,
+                 1px 2px 1px #919191,
+                 1px 3px 1px #919191,
+                 1px 4px 1px #919191,
+                 1px 5px 1px #919191,
+                 1px 6px 1px #919191,
+                 1px 7px 1px #919191,
+                 1px 8px 3px rgba(16,16,16,0.4),
+                 1px 9px 6px rgba(16,16,16,0.2),
+                 1px 10px 9px rgba(16,16,16,0.2)
+}
+
+.Home_button:hover {
+    background-color: dodgerblue;
+}
+
+.Home_button:active {
+    background-color: dodgerblue;
+    box-shadow: 0 5px #666;
+    transform: translate(-50%, 7px);
+}
+
+@keyframes close {
+    from { width: 0 }
+    to { width: 50% } 
+}
+
+.Home_navBackgroundLeft {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    animation-name: close;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.Home_navBackgroundRight {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    animation-name: close;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}

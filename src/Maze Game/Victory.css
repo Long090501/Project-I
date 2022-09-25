@@ -1,0 +1,96 @@
+.Victory_wrapper {
+    position: relative;
+    background-image: url('D:\Workspace\prj1\src\assets\image\VictoryBorder.jpg');
+    background-size: 100% 100%;
+    width: 600px;
+    height: 400px;
+}
+
+.Victory_titleBackground {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 30%;
+}
+
+.Victory_title {
+    position: absolute;
+    top: 19%;
+    left: 49%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: gold;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #919191,
+                 1px 2px 1px #919191,
+                 1px 3px 1px #919191,
+                 1px 4px 1px #919191,
+                 1px 5px 1px #919191,
+                 1px 6px 1px #919191,
+                 1px 7px 1px #919191,
+                 1px 8px 3px rgba(16,16,16,0.4),
+                 1px 9px 6px rgba(16,16,16,0.2),
+                 1px 10px 9px rgba(16,16,16,0.2)
+}
+
+.Victory_contentBackground {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+}
+
+.Victory_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: gold;
+}
+
+.Victory_homeImage {
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 14%;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+}
+
+.Victory_homeImage:hover {
+    width: 12%;
+    height: 16%;
+}
+
+.Victory_replayImage {
+    position: absolute;
+    top: 68%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 14%;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+}
+
+.Victory_replayImage:hover {
+    width: 12%;
+    height: 16%;
+}
+
+.Victory_championImage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 28%;
+}
